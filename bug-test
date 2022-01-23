@@ -16,3 +16,17 @@ API -
 3. Delete comments are not getting updated on dashboard.
 4. When doing "Get Employee List" - Dashboard value of Last Name and First Name is getting swapped when getting JSON value.(Dashboard.FirstName is going to JSON.LastName and vice-versa)
 5. When updating value, dashboard needs to be refreshed and re-login is required.
+
+
+
+
+
+Summary - 
+
+The main observation is about FirstName and LastName Values getting swapped, when adding or updating values. Dashboard getting mismatch values. 
+When moving to salary and benefits, need to know formula to calculate it, to verify correct calculated values. 
+If there are 2 or more employees with same First Name, Last Name and benifits, it is creating confusion and there is no differentiator, 
+how to delete or update a given employee belonging to same category. When updating value using API call, salary and gross pay are coming as $0, 
+and Net pay is negative. Lets say there is no activity for sometime on dashboard, the session expires and dashboard is still visible but no activity can be done. 
+Instead it should go to login page and do-auto logout. In dashboard all the amounts are missing '$' symbol. When trying to delete from API call, 
+there is no activity on dashboard, so not sure if there is connectivity issue.
