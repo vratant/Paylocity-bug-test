@@ -1,0 +1,18 @@
+Paylocity Bug Find test
+UI - 
+1. When adding/updating First name and Last Name value, it is getting swapped when seeing on Dashboard.(First Name value displayed in Last Name column and vice-versa)
+2. How is "Benefits Cost" and "Net Pay" calculated?
+3. What is the maximum value for "Dependants"?
+4. If there are 2 or more employees with same First Name, Last Name and Dependants, so after entering details, how do we know which row is for which employee?(what is the differentiator)
+5. Currency symbol is missing from all the numbers.
+6. When session expires, dashboard is still visible. It should be directed to login page.
+
+
+
+
+API - 
+1. When adding values to first name and last name, value is getting swapped when seeing value on Dashboard. (First Name value displayed in Last Name column and vice-versa)
+2. When updating value for an id which is not there on dashboard - a new row is being added to dashboard, but with $0 salary and $ gross pay and net is coming in negative value. Instead it should be displaying no value found for ID, or it should add new row with updated/correct salart and gross pay.
+3. Delete comments are not getting updated on dashboard.
+4. When doing "Get Employee List" - Dashboard value of Last Name and First Name is getting swapped when getting JSON value.(Dashboard.FirstName is going to JSON.LastName and vice-versa)
+5. When updating value, dashboard needs to be refreshed and re-login is required.
